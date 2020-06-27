@@ -5,14 +5,14 @@ import Appointment from '../models/Appointment';
 import AppointmentRepository from '../repositories/AppointmentRepository';
 
 interface Request {
-    provider: string;
+    provider_id: string;
     date: Date;
 }
 
 class CreateAppointmentService {
     // DIP (Dependency Inversion Principle)
     // SRP (Single Responsability Principle)
-    public async execute({ date, provider }: Request): Promise<Appointment> {
+    public async execute({ date, provider_id }: Request): Promise<Appointment> {
         const appointmentRepository = getCustomRepository(
             AppointmentRepository,
         );
@@ -28,7 +28,7 @@ class CreateAppointmentService {
         }
 
         const appointment = appointmentRepository.create({
-            provider,
+            provider_id,
             date: appointmentDate,
         });
 

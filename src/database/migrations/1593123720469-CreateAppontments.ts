@@ -9,7 +9,7 @@ export default class CreateAppontments1593123720469
                 columns: [
                     {
                         name: 'id',
-                        type: 'varchar',
+                        type: 'uuid',
                         isPrimary: true,
                         generationStrategy: 'uuid',
                         default: 'uuid_generate_v4()',
@@ -23,12 +23,12 @@ export default class CreateAppontments1593123720469
                         type: 'timestamp with time zone',
                     },
                     {
-                        name: 'create_ad',
+                        name: 'created_at',
                         type: 'timestamp',
                         default: 'now()',
                     },
                     {
-                        name: 'updated_ad',
+                        name: 'updated_at',
                         type: 'timestamp',
                         default: 'now()',
                     },
