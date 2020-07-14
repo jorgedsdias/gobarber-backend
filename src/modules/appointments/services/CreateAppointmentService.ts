@@ -10,9 +10,9 @@ interface IRequest {
     date: Date;
 }
 
-// Liskov Substitution Principle
-// DIP (Dependency Inversion Principle)
 // SRP (Single Responsability Principle)
+// LSP (Liskov Substitution Principle)
+// DIP (Dependency Inversion Principle)
 
 @injectable()
 class CreateAppointmentService {

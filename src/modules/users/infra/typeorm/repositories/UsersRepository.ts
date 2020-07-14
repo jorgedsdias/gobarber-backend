@@ -5,7 +5,7 @@ import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 
 import User from '@modules/users/infra/typeorm/entities/User';
 
-// Liskov Substitution Principle
+// LSP (Liskov Substitution Principle)
 class UsersRepository implements IUsersRepository {
     private ormRepository: Repository<User>;
 

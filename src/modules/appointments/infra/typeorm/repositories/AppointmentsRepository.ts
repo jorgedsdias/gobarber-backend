@@ -5,7 +5,7 @@ import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointment
 
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 
-// Liskov Substitution Principle
+// LSP (Liskov Substitution Principle)
 class AppointmentsRepository implements IAppointmentsRepository {
     private ormRepository: Repository<Appointment>;
 
