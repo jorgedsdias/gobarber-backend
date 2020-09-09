@@ -39,6 +39,16 @@ export default class CreateUsers1593127318537 implements MigrationInterface {
                 ],
             }),
         );
+
+        // queryRunner.manager
+        //     .createQueryBuilder()
+        //     .insert()
+        //     .into('users')
+        //     .values({
+        //         name: 'teste',
+        //         email: 'teste',
+        //     })
+        //     .execute();
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
